@@ -84,12 +84,12 @@ if __name__ == "__main__":
 
         if setD > setG:
             # zapis imena domacina u pobjednik
-            row.append(ekipe[i].split(' – ')[0])
+            row.append(ekipe[i].split(' – ')[0].strip().replace("OK MLADOST RIBOLA KAŠTELA", "OK RIBOLA KAŠTELA"))
             # zapis pobjednikDomacinIliGost
             row.append(0)
         else:
             # zapis imena gosta u pobjednik
-            row.append(ekipe[i].split(' – ')[1])
+            row.append(ekipe[i].split(' – ')[1].strip().replace("OK MLADOST RIBOLA KAŠTELA", "OK RIBOLA KAŠTELA"))
             # zapis pobjednikDomacinIliGost
             row.append(1)
 
